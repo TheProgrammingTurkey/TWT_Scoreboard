@@ -1,0 +1,15 @@
+.top{
+  width: 100%;
+}
+
+.players{
+  float: left;
+}
+
+.rounds{
+  float: right
+}
+
+.title{
+  font-size: 100px;
+}
