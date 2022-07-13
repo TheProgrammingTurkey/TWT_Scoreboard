@@ -1,5 +1,7 @@
 html{
-  margin: 5%;
+  margin-top: 3%;
+  margin-left: 8%;
+  margin-right: 8%;
 }
 
 .top{
@@ -18,4 +20,12 @@ html{
 .title{
   font-size: 100px;
   width: 90%;
+}
+
+#my-table{
+  width: 100%;
+}
+
+input{
+  text-align: center
 }
