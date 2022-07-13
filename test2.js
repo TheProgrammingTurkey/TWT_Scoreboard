@@ -8,3 +8,6 @@ $("#addColumnChild").click(function () {
   
 });
 
+function myFunction() {
+  document.getElementById("my-table").deleteRow(0);
+}
