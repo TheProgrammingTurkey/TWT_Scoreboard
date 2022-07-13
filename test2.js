@@ -2,7 +2,7 @@
 
 $('#addColumnChild').click(function(){
    $('#my-table tr').each(function(){
-      $(this).append(`<td></td>`);
+      $(this).append(`<th><input placeholder="Name"></th><td></td>`);
    });
 });
 
