@@ -36,7 +36,8 @@ html{
 input{
   text-align: center;
   background-color: #D1DEEE;
-  border: 5px;
+  border: 2.2px solid #2C4E7A;
+  border-radius: 3px;
 }
 
 th{
