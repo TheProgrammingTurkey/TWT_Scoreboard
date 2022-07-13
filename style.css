@@ -1,15 +1,35 @@
 .top{
   width: 100%;
+  text-align: center;
 }
 
 .players{
-  float: left;
+  width: 5%;
 }
 
 .rounds{
-  float: right
+  width: 5%
 }
 
 .title{
   font-size: 100px;
+  width: 90%;
+}
+
+
+
+#canvas {
+  align-content: center;
+  height: 1000px;
+}
+
+#my-table {
+  margin: 0 -2px -2px 0;
+  border: #FFF;
+  border: 1px solid rgb(72, 170, 230);
+  display: inline-block;
+}
+
+.addsubtract {
+  background: rgb(72, 170, 230);
 }
