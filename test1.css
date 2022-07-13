@@ -1,0 +1,52 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu+Condensed&family=Ubuntu:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap");
+
+html{
+  margin-top: 3%;
+  margin-left: 8%;
+  margin-right: 8%;
+  background-color: #343a40;
+  font-family: "Ubuntu", sans-serif;
+}
+
+.top{
+  width: 100%;
+  text-align: center;
+}
+
+.players{
+  width: 5%;
+}
+
+.rounds{
+  width: 5%
+}
+
+.title{
+  font-size: 100px;
+  width: 90%;
+  color: #4F7FBF;
+}
+
+#my-table{
+  width: 100%;
+}
+
+input{
+  text-align: center;
+  background-color: #D1DEEE;
+  border: 2.2px solid #2C4E7A;
+  border-radius: 3px;
+}
+
+th{
+  color: #6993C9;
+  font-size: 40px;
+  padding-bottom: 20px;
+}
+
+td{
+  color: #8CACD5;
+  font-size: 25px;
+}
