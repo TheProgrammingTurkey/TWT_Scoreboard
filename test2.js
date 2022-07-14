@@ -1,4 +1,4 @@
-var z = 2
+let z = 2
 
 $("#addColumnChild").click(function () {
     $("#my-table #topRow").append("<th><input placeholder='Name'></th>");
@@ -8,6 +8,8 @@ $("#addColumnChild").click(function () {
 });
 
 $('#addRowChild').click(function(){
+  let myTable = document.getElementById("my-table")
+  let row = myTable
   for (let i=0; i<z; i++){
   $('#my-table tbody').append(`<td><input class="score"></td>`);
   }
