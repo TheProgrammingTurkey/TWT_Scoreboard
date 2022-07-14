@@ -34,13 +34,13 @@
     
     <table id="gameTable">
       <tr id="nameRow">
-        <th><input placeholder="Name"></th>
-        <th><input placeholder="Name"></th>
+        <th><input placeholder="Name" onchange="calcScore()"></th>
+        <th><input placeholder="Name" onchange="calcScore()"></th>
       </tr>
       
       <tr id="ovrScoreRow">
-        <th><p class="ovrScore"></p></th>
-        <th><div class="ovrScore"></div></th>
+        <th><div id="player-ovr-score-0" class="ovrScore"></div></th>
+        <th><div id="player-ovr-score-1" class="ovrScore"></div></th>
       </tr>
     </table>
   </body>
