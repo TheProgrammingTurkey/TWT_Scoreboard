@@ -4,8 +4,6 @@
 
 html{
   margin-top: 3%;
-  margin-left: 8%;
-  margin-right: 8%;
   background-color: #343a40;
   font-family: "Ubuntu", sans-serif;
 }
@@ -17,6 +15,8 @@ html{
 .top{
   width: 100%;
   text-align: center;
+  padding-left: 8%;
+  padding-right: 8%;
 }
 
 .players{
@@ -44,12 +44,12 @@ html{
   border-left: 0px;
   border-right: 0px;
   border-top: 0px;
-  width: 25%;
+  width: 35%;
 }
 
 .ovrScore{
   border: 3px solid black;
-  width: 25%;
+  width: 35%;
   margin-inline: auto;
 }
 
@@ -58,6 +58,7 @@ input{
   background-color: #D1DEEE;
   border: 2.2px solid #2C4E7A;
   border-radius: 3px;
+  width: 35%;
 }
 
 th{
