@@ -9,7 +9,7 @@ $("#addColumnChild").click(function () {
 
 $('#addRowChild').click(function(){
   for (let i=0; i<z; i++){
-  $('#my-table tbody').append(`<tr>${$('#default-row').html()}</tr>`);
+  $('#my-table tbody').append(`<td></td>`);
   }
 });
 
