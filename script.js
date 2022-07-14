@@ -4,12 +4,17 @@ let table = document.getElementById("gameTable")
 
 //add column
 $("#addColumnChild").click(function () {
-  let topRow = document.getElementById("nameRow")
-  let headerCell = document.createElement("th")
-  headerCell.innerHTML = "<input placeholder='Name'>"
-  topRow.appendChild(headerCell)
+  let nameRow = document.getElementById("nameRow")
+  let nameCell = document.createElement("th")
+  nameCell.innerHTML = "<input placeholder='Name'>"
+  nameRow.appendChild(nameCell)
+  
+  let ovrScoreRow = document.getElementById("ovrScoreRow")
+  let ovrScoreCell = document.createElement("th")
+  ovrScoreCell.innerHTML = "<div class='ovrScore'></div>"
+  ovrScoreRow.appendChild(nameCell)
+  
   let rowElements = document.getElementsByClassName("score-row")
-  console.log(rowElements)
   
   for (let i=0; i<rowElements.length; i++){
     let cell = document.createElement("td")

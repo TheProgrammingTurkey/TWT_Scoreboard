@@ -44,7 +44,15 @@ html{
   border-left: 0px;
   border-right: 0px;
   border-top: 0px;
+  width: 25%;
 }
+
+.ovrScore{
+  border: 3px solid black;
+  width: 25%;
+  margin-inline: auto;
+}
+
 input{
   text-align: center;
   background-color: #D1DEEE;
