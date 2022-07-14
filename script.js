@@ -36,7 +36,7 @@ $("#addRowChild").click(function () {
     row.appendChild(cell);
   }
   table.appendChild(row);
-  row+=1
+  rows+=1
 
 });
 
