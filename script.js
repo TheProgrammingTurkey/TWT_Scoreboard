@@ -1,46 +1,12 @@
 let columns = 2;
 let rows = 1;
-let table = document.getElementById("gameTable");
-
-//add column
-$("#addColumnChild").click(function () {
-  let nameRow = document.getElementById("nameRow");
-  let nameCell = document.createElement("th");
-  nameCell.innerHTML = "<input placeholder='Name'>";
-  nameRow.appendChild(nameCell);
-
-  let ovrScoreRow = document.getElementById("ovrScoreRow");
-  let ovrScoreCell = document.createElement("th");
-  ovrScoreCell.innerHTML = "<div class='ovrScore'></div>";
-  ovrScoreRow.appendChild(ovrScoreCell);
-
-  let rowElements = document.getElementsByClassName("score-row");
-
-  for (let i = 0; i < rowElements.length; i++) {
-    let cell = document.createElement("td");
-    cell.innerHTML = "<input class='score'>";
-    rowElements[i].appendChild(cell);
-  }
-  columns += 1;
-});
-
-//add row
-$("#addRowChild").click(function () {
-  let row = document.createElement("tr");
-  row.classList.add("score-row");
-
-  for (let i = 0; i < columns; i++) {
-    let cell = document.createElement("td");
-    cell.innerHTML = "<input class='score'>";
-    row.appendChild(cell);
-  }
-  table.appendChild(row);
-  row+=1
+let table =
 });
 
 //delete row
 $("#deleteRowChild").click(function () {
   document.getElementById("gameTable").deleteRow(-1);
+  rows-=1
 });
 
 //delete column
