@@ -6,7 +6,7 @@ let table = document.getElementById("gameTable");
 $("#addColumnChild").click(function () {
   let nameRow = document.getElementById("nameRow");
   let nameCell = document.createElement("th");
-  nameCell.innerHTML = "<input placeholder='Name' onchange='calcScore()'>";
+  nameCell.innerHTML = "<input placeholder='Name'>";
   nameRow.appendChild(nameCell);
 
   let ovrScoreRow = document.getElementById("ovrScoreRow");
@@ -18,7 +18,7 @@ $("#addColumnChild").click(function () {
 
   for (let i = 0; i < rowElements.length; i++) {
     let cell = document.createElement("td");
-    cell.innerHTML = "<input class='score'>";
+    cell.innerHTML = "<input class='score' onchange='calcScore()'>";
     rowElements[i].appendChild(cell);
   }
   columns += 1;
@@ -37,12 +37,7 @@ $("#addRowChild").click(function () {
   }
   table.appendChild(row);
   row+=1
-  
-  let scores = document.getElementsByClassName("ovrScore")
-  for (let i = 0; i < scores.length; i++) {
-    let div = scores[i]
-    div.innerHTML = "35"
-  }
+
 });
 
 //delete row
@@ -72,4 +67,15 @@ $("#deleteColumnChild").click(function () {
 });
 
 
-function calcScore()
+function calcScore(){
+  let player0Scores = document.getElementsByClassName("player-0")
+  let player0Score = 0
+  
+  console.log("here")
+  
+  for (let i = 0; i < player0Scores.length; i++) {
+    let input = player0Scores[i]
+    player0Score+=input.value
+    }
+  document.getElementById("player-ovr-score-0").innerHTML = player0Score
+}
