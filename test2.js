@@ -19,7 +19,7 @@ $("#deleteColumnChild").click(function () {
 
 $('#addRowChild').click(function()
     { var x=document.getElementById("my-table").tBodies[0];  //get the table
-      var node=x.rows[0].cloneNode(true);    //clone the previous node or row
+      var node=x.rows[1].cloneNode(true);    //clone the previous node or row
       x.appendChild(node);   //add the node or row to the table
     });  
 

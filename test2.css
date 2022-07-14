@@ -5,7 +5,7 @@
 
 #my-table {
   margin: 0 -2px -2px 0;
-  border: #FFF;
+  border: #FFFFFF;
   border: 1px solid rgb(72, 170, 230);
   display: inline-block;
 }
@@ -24,7 +24,7 @@ td {
   width: 52px;
   background: rgb(243, 165, 0);
   cursor: pointer;
-  color: #FFF;
+  color: #FFFFFF;
   text-align: center;
   font-family: 'Open Sans', sans-serif;
   transition-property: background;
