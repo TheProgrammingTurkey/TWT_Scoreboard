@@ -51,6 +51,7 @@ html{
   border: 3px solid black;
   width: 35%;
   margin-inline: auto;
+  height: 20px;
 }
 
 input{
