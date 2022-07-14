@@ -1,11 +1,20 @@
 let columns = 2
-let rows = 2
+let rows = 1
 
 $("#addColumnChild").click(function () {
-    //$("#my-table #topRow").append("<th><input placeholder='Name'></th>");
    //$("#my-table #default-row").append("<td></td>");
   let topRow = document.getElementById("topRow")
-  let row = document.createElement("tr")
+  let headerCell = document.createElement("th")
+  headerCell.innerHTML = "<input placeholder='Name'>"
+  topRow.appendChild(headerCell)
+  let rowElements = document.getElementByClassName("score-row")
+  
+  for (let i=0; i<rowElements.length; i++){
+    let cell = document.createElement("td")
+    cell.innerHTML = "<input class='score'>"
+    rowElements[i].appendChild(cell)
+  }
+  
 
   
     columns+=1
@@ -15,6 +24,7 @@ $("#addColumnChild").click(function () {
 $('#addRowChild').click(function(){
   let myTable = document.getElementById("my-table")
   let row = document.createElement("tr")
+  row.classList.add("score-row")
   
   for (let i=0; i<columns; i++){
     let cell = document.createElement("td")
