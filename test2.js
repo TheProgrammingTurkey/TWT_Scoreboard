@@ -2,12 +2,12 @@ let columns = 2
 let rows = 1
 
 $("#addColumnChild").click(function () {
-   //$("#my-table #default-row").append("<td></td>");
   let topRow = document.getElementById("topRow")
   let headerCell = document.createElement("th")
   headerCell.innerHTML = "<input placeholder='Name'>"
   topRow.appendChild(headerCell)
-  let rowElements = document.getElementByClassName("score-row")
+  let rowElements = document.getElementsByClassName("score-row")
+  console.log(rowElements)
   
   for (let i=0; i<rowElements.length; i++){
     let cell = document.createElement("td")
@@ -44,11 +44,6 @@ $("#deleteRowChild").click(function () {
 
 
 
-//$('#addRowChild').click(function()
-  //  { var x=document.getElementById("my-table").tBodies[0];  //get the table
-  //    var node=x.rows[1].cloneNode(true);    //clone the previous node or row
-   //   x.appendChild(node);   //add the node or row to the table
-  //  });  
 
 
 $('#deleteColumnChild').click(function(){
