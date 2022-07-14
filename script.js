@@ -50,7 +50,7 @@ $('#deleteColumnChild').click(function(){
             var row = table.rows;  
   
             // Removing the column at index(1).  
-            var i = 1; 
+            var i = -1; 
             for (var j = 0; j < row.length; j++) {
   
                 // Deleting the ith cell of each row.
