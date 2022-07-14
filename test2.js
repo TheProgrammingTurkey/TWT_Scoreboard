@@ -9,3 +9,7 @@ $("#addColumnChild").click(function () {
 $('#addRowChild').click(function(){
   $('#my-table tbody').append(`<tr>${$('#default-row').html()}</tr>`);
 });
+
+$("#deleteColumnChild").click(function () {
+  document.getElementById("my-table").deleteRow(-1);
+});
