@@ -18,7 +18,7 @@ $("#addColumnChild").click(function () {
 
   for (let i = 0; i < rowElements.length; i++) {
     let cell = document.createElement("td");
-    cell.innerHTML = "<input class='score' onchange='calcScore()'>";
+    cell.innerHTML = `<input class='score player-${columns}' onchange='calcScore()'>`;
     rowElements[i].appendChild(cell);
   }
   columns += 1;
@@ -32,7 +32,7 @@ $("#addRowChild").click(function () {
 
   for (let i = 0; i < columns; i++) {
     let cell = document.createElement("td");
-    cell.innerHTML = `<input class='score player-${i}'>`;
+    cell.innerHTML = `<input class='score player-${i}' onchange='calcScore()'>`;
     row.appendChild(cell);
   }
   table.appendChild(row);
@@ -68,14 +68,14 @@ $("#deleteColumnChild").click(function () {
 
 
 function calcScore(){
-  let player0Scores = document.getElementsByClassName("player-0")
-  let player0Score = 0
-  
-  console.log("here")
-  
-  for (let i = 0; i < player0Scores.length; i++) {
-    let input = player0Scores[i]
-    player0Score+=input.value
-    }
-  document.getElementById("player-ovr-score-0").innerHTML = player0Score
+  for(let i = 0; i < columns; i++){
+    let playerScores = document.getElementsByClassName(`player-${i}`)
+    let playerScore = 0
+    
+    for (let i = 0; i < playerScores.length; i++) {
+      let input = playerScores[i]
+      playerScore+=parseInt(input.value)
+      }
+    document.getElementById(`player-ovr-score-${i}`).innerHTML = playerScore
+  }
 }
