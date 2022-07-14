@@ -12,9 +12,9 @@ $("#addColumnChild").click(function () {
   let ovrScoreRow = document.getElementById("ovrScoreRow")
   let ovrScoreCell = document.createElement("th")
   ovrScoreCell.innerHTML = "<div class='ovrScore'></div>"
-  ovrScoreRow.appendChild(ovrScoreCell)
+  ovrScoreRow.appendChild(nameCell)
   
-  let rowElements = document.getElementsByClassName("score-row")
+  let rowElements = document.getElementsByClassName("score-row")+1
   
   for (let i=0; i<rowElements.length; i++){
     let cell = document.createElement("td")
