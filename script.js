@@ -1,4 +1,5 @@
 let columns = 2;
+let rows = 1;
 let table = document.getElementById("gameTable");
 
 //add column
@@ -34,6 +35,7 @@ $("#addRowChild").click(function () {
     row.appendChild(cell);
   }
   table.appendChild(row);
+  row+=1
 });
 
 //delete row
@@ -54,8 +56,3 @@ $("#deleteColumnChild").click(function () {
   }
   columns -= 1;
 });
-
-
-let score = document.getElementByClassName("score")
-document.getElementByClassName("ovrScore").innerHTML = "3";
-
