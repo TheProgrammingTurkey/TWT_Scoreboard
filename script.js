@@ -1,8 +1,10 @@
 let columns = 2
-let rows = 1
+let table = document.getElementById("gameTable")
 
+
+//add column
 $("#addColumnChild").click(function () {
-  let topRow = document.getElementById("topRow")
+  let topRow = document.getElementById("nameRow")
   let headerCell = document.createElement("th")
   headerCell.innerHTML = "<input placeholder='Name'>"
   topRow.appendChild(headerCell)
@@ -14,15 +16,11 @@ $("#addColumnChild").click(function () {
     cell.innerHTML = "<input class='score'>"
     rowElements[i].appendChild(cell)
   }
-  
-
-  
     columns+=1
-  
 });
 
+//add row
 $('#addRowChild').click(function(){
-  let myTable = document.getElementById("my-table")
   let row = document.createElement("tr")
   row.classList.add("score-row")
   
@@ -31,28 +29,25 @@ $('#addRowChild').click(function(){
     cell.innerHTML = "<input class='score'>"
     row.appendChild(cell)
   }
-  rows+=1
-  myTable.appendChild(row)
+  table.appendChild(row)
 });
 
 
+
+//delete row
 $("#deleteRowChild").click(function () {
-  document.getElementById("my-table").deleteRow(-1);
-  rows-=1
+  document.getElementById("gameTable").deleteRow(-1);
 });
 
 
 
 
 
-
+//delete column
 $('#deleteColumnChild').click(function(){
   
-            // Getting the table
-            var tble = document.getElementById('my-table'); 
-  
             // Getting the rows in table.
-            var row = tble.rows;  
+            var row = table.rows;  
   
             // Removing the column at index(1).  
             var i = 1; 
