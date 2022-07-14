@@ -31,8 +31,16 @@ html{
 
 #my-table{
   width: 100%;
+  text-align: center;
 }
 
+.score{
+  border-bottom: 3px solid black;
+  background-color: transparent;
+  border-left: 0px;
+  border-right: 0px;
+  border-top: 0px;
+}
 input{
   text-align: center;
   background-color: #D1DEEE;
