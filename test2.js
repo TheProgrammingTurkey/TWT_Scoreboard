@@ -1,23 +1,34 @@
-let z = 2
+let columns = 2
+let rows = 2
 
 $("#addColumnChild").click(function () {
-    $("#my-table #topRow").append("<th><input placeholder='Name'></th>");
-    $("#my-table #default-row").append("<td></td>");
-    z+=1
+    //$("#my-table #topRow").append("<th><input placeholder='Name'></th>");
+   //$("#my-table #default-row").append("<td></td>");
+  let topRow = document.getElementById("topRow")
+  let row = document.createElement("tr")
+
+  
+    columns+=1
   
 });
 
 $('#addRowChild').click(function(){
   let myTable = document.getElementById("my-table")
-  let row = myTable
-  for (let i=0; i<z; i++){
-  $('#my-table tbody').append(`<td><input class="score"></td>`);
+  let row = document.createElement("tr")
+  
+  for (let i=0; i<columns; i++){
+    let cell = document.createElement("td")
+    cell.innerHTML = "<input class='score'>"
+    row.appendChild(cell)
   }
+  rows+=1
+  myTable.appendChild(row)
 });
 
 
 $("#deleteRowChild").click(function () {
   document.getElementById("my-table").deleteRow(-1);
+  rows-=1
 });
 
 
@@ -45,4 +56,5 @@ $('#deleteColumnChild').click(function(){
                 // Deleting the ith cell of each row.
                 row[j].deleteCell(i);
             }
+            columns-=1
         });
