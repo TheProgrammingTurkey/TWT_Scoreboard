@@ -106,3 +106,67 @@ td{
   color: #8CACD5;
   font-size: 25px;
 }
+
+@media only screen and (max-width: 500px){
+  
+  .title{
+    font-size: 50px;
+  }
+  
+  th{
+    font-size: 20px;
+    padding-bottom: 10px;
+  }
+  
+  td{
+    font-size: 14px;
+  }
+  
+  .name{
+    font-size: 15px;
+    width: 75px;
+  }
+  
+  .score{
+    font-size: 15px;
+    width: 50px;
+  }
+  
+  .ovrScore{
+    font-size: 25px;
+    width: 75px;
+  }
+  
+}
+
+@media only screen and (max-width: 1000px){
+  
+  .title{
+    font-size: 60px;
+  }
+  
+  th{
+    font-size: 30px;
+    padding-bottom: 15px;
+  }
+  
+  td{
+    font-size: 20px;
+  }
+  
+  .name{
+    font-size: 20px;
+    width: 100px;
+  }
+  
+  .score{
+    font-size: 20px;
+    width: 50px;
+  }
+  
+  .ovrScore{
+    font-size: 25px;
+    width: 75px;
+  }
+  
+}
