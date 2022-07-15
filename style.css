@@ -27,10 +27,8 @@ html{
   width: 5%
 }
 
-.title{
-  font-size: 100px;
-  width: 90%;
-  color: #4F7FBF;
+img{
+  width: 35%;
 }
 
 #gameTable{
@@ -109,8 +107,8 @@ td{
 
 @media only screen and (max-width: 900px){
   
-  .title{
-    font-size: 60px;
+  img{
+    width: 55%;
   }
   
   th{
@@ -141,8 +139,8 @@ td{
 
 @media only screen and (max-width: 500px){
   
-  .title{
-    font-size: 50px;
+  img{
+    width: 60%;
   }
   
   th{
