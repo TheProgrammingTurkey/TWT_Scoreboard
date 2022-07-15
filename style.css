@@ -39,27 +39,36 @@ html{
 }
 
 .score{
-  border-bottom: 3px solid black;
+  border-bottom: 3px solid #294872;
   background-color: transparent;
   border-left: 0px;
   border-right: 0px;
   border-top: 0px;
   width: 35%;
+  color: #6993C9;
+  font-size: 20px;
 }
 
 .ovrScore{
-  border: 3px solid black;
+  border: 3px solid #294872;
   width: 35%;
   margin-inline: auto;
+  border-radius: 3px;
+  font-size: 50px
 }
 
 input{
   text-align: center;
   background-color: #D1DEEE;
-  border: 2.2px solid #2C4E7A;
+  border: 2px solid #2C4E7A;
   border-radius: 3px;
   width: 35%;
 }
+
+input::-webkit-outer-spin-button,
+      input::-webkit-inner-spin-button {
+        display: none;
+      }
 
 th{
   color: #6993C9;
