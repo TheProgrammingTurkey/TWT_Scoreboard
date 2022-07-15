@@ -44,9 +44,9 @@ html{
   border-left: 0px;
   border-right: 0px;
   border-top: 0px;
-  width: 180px;
+  width: 160px;
   color: #759BCD;
-  font-size: 30px;
+  font-size: 26px;
 }
 
 ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
@@ -70,14 +70,14 @@ html{
   border-left: 0px;
   border-right: 0px;
   border-top: 0px;
-  width: 140px;
+  width: 130px;
   color: #759BCD;
   font-size: 20px;
 }
 
 .ovrScore{
   border: 3px solid #335A8E;
-  width: 180px;
+  width: 160px;
   margin-inline: auto;
   border-radius: 3px;
   font-size: 50px
@@ -107,6 +107,38 @@ td{
   font-size: 25px;
 }
 
+@media only screen and (max-width: 900px){
+  
+  .title{
+    font-size: 60px;
+  }
+  
+  th{
+    font-size: 30px;
+    padding-bottom: 15px;
+  }
+  
+  td{
+    font-size: 20px;
+  }
+  
+  .name{
+    font-size: 15px;
+    width: 80px;
+  }
+  
+  .score{
+    font-size: 15px;
+    width: 60px;
+  }
+  
+  .ovrScore{
+    font-size: 22px;
+    width: 80px;
+  }
+  
+}
+
 @media only screen and (max-width: 500px){
   
   .title{
@@ -123,44 +155,12 @@ td{
   }
   
   .name{
-    font-size: 15px;
+    font-size: 14px;
     width: 75px;
   }
   
   .score{
     font-size: 15px;
-    width: 50px;
-  }
-  
-  .ovrScore{
-    font-size: 25px;
-    width: 75px;
-  }
-  
-}
-
-@media only screen and (max-width: 1000px){
-  
-  .title{
-    font-size: 60px;
-  }
-  
-  th{
-    font-size: 30px;
-    padding-bottom: 15px;
-  }
-  
-  td{
-    font-size: 20px;
-  }
-  
-  .name{
-    font-size: 20px;
-    width: 100px;
-  }
-  
-  .score{
-    font-size: 20px;
     width: 50px;
   }
   
