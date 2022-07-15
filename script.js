@@ -6,7 +6,7 @@ let table = document.getElementById("gameTable");
 $("#addColumnChild").click(function () {
   let nameRow = document.getElementById("nameRow");
   let nameCell = document.createElement("th");
-  nameCell.innerHTML = "<input placeholder='Name'>";
+  nameCell.innerHTML = "<input placeholder='Name' class='name' >";
   nameRow.appendChild(nameCell);
 
   let ovrScoreRow = document.getElementById("ovrScoreRow");

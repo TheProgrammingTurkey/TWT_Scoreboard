@@ -38,14 +38,40 @@ html{
   text-align: center;
 }
 
-.score{
+.name{
   border-bottom: 3px solid #294872;
   background-color: transparent;
   border-left: 0px;
   border-right: 0px;
   border-top: 0px;
   width: 35%;
-  color: #6993C9;
+  color: #5B89C4;
+  font-size: 20px;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #5B89C4;
+  opacity: 1; /* Firefox */
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+  color: #5B89C4;
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: #5B89C4;
+}
+
+
+
+.score{
+  border-bottom: 3px solid #294872;
+  background-color: transparent;
+  border-left: 0px;
+  border-right: 0px;
+  border-top: 0px;
+  width: 25%;
+  color: #5B89C4;
   font-size: 20px;
 }
 
@@ -71,7 +97,7 @@ input::-webkit-outer-spin-button,
       }
 
 th{
-  color: #6993C9;
+  color: #5B89C4;
   font-size: 40px;
   padding-bottom: 20px;
 }
