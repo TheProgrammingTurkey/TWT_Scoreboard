@@ -39,7 +39,7 @@ html{
 }
 
 .name{
-  border-bottom: 3px solid #294872;
+  border-bottom: 3px solid #335A8E;
   background-color: transparent;
   border-left: 0px;
   border-right: 0px;
@@ -76,7 +76,7 @@ html{
 }
 
 .ovrScore{
-  border: 3px solid #294872;
+  border: 3px solid #335A8E;
   width: 35%;
   margin-inline: auto;
   border-radius: 3px;
