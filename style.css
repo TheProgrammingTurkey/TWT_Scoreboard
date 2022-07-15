@@ -44,7 +44,7 @@ html{
   border-left: 0px;
   border-right: 0px;
   border-top: 0px;
-  min-width: 35%;
+  width: 180px;
   color: #759BCD;
   font-size: 30px;
 }
@@ -70,14 +70,14 @@ html{
   border-left: 0px;
   border-right: 0px;
   border-top: 0px;
-  width: 25%;
+  width: 140px;
   color: #759BCD;
   font-size: 20px;
 }
 
 .ovrScore{
   border: 3px solid #335A8E;
-  width: 35%;
+  width: 180px;
   margin-inline: auto;
   border-radius: 3px;
   font-size: 50px
