@@ -73,37 +73,17 @@ $("#deleteColumnChild").click(function () {
 });
 
 
-function calcScore(){
-  for(let i = 0; i < columns; i++){
-    let playerScores = document.getElementsByClassName(`player-${i}`)
-    let playerScore = 0
-    
-    for (let i = 0; i < playerScores.length; i++) {
-      let input = playerScores[i]
-      playerScore+=parseInt(input.value)
-      }
-    document.getElementById(`player-ovr-score-${i}`).innerHTML = playerScore
-  }
-}
-
-
-
 
 let playerScore = 0
 
-function addScore(){
+function addScore0(){
   playerScore+=1
-  for(let i = 0; i < columns; i++){
-  document.getElementById(`player-ovr-score-${i}`).innerHTML = playerScore
-  }
-
+  document.getElementById("player-ovr-score-0").innerHTML = playerScore
 }
 
 
 
-function minusScore(){
+function minusScore0(){
   playerScore-=1
-  for(let i = 0; i < columns; i++){
-  document.getElementById(`player-ovr-score-${i}`).innerHTML = playerScore
-  }
+  document.getElementById("player-ovr-score-0").innerHTML = playerScore
 }
