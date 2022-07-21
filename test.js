@@ -89,9 +89,13 @@ function calcScore(){
 
 
 
+let playerScore = 0
 
 function addScore(){
-  let playerScore = document.getElementsByClassName(`player-`)
+  for(let i = 0; i < columns; i++){
+    playerScore+=1
+    document.getElementById(`player-ovr-score-0`).innerHTML = playerScore
+  }
 }
 
 
