@@ -27,7 +27,7 @@ $("#addColumnChild").click(function () {
 
   for (let i = 0; i < rowElements.length; i++) {
     let cell = document.createElement("td");
-    cell.innerHTML = `<input class='score player-${columns}' onchange='calcScore()' type="number" value=0>`;
+    cell.innerHTML = `<input class='score player-${columns}' type="number" value=0>`;
     rowElements[i].appendChild(cell);
   }
   columns += 1;
@@ -42,7 +42,7 @@ $("#addRowChild").click(function () {
 
   for (let i = 0; i < columns; i++) {
     let cell = document.createElement("td");
-    cell.innerHTML = `<input class='score player-${i}' onchange='calcScore()' type="number" value=0>`;
+    cell.innerHTML = `<input class='score player-${i}' type="number" value= playerScore${i}>`;
     row.appendChild(cell);
   }
   table.appendChild(row);
@@ -65,11 +65,11 @@ $("#deleteColumnChild").click(function () {
   if(columns <= 2)
     return
   // Getting the rows in table.
-  var row = table.rows;
+  let row = table.rows;
 
   // Removing the column at index(1).
-  var i = -1;
-  for (var j = 0; j < row.length; j++) {
+  let i = -1;
+  for (let j = 0; j < row.length; j++) {
     // Deleting the ith cell of each row.
     row[j].deleteCell(i);
   }
