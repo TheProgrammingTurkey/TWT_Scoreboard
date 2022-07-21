@@ -101,7 +101,9 @@ function addScore(){
 
 
 
-function  minusScore(){
+function minusScore(){
+  for(let i = 0; i < columns; i++){
   playerScore-=1
   document.getElementById(`player-ovr-score-${i}`).innerHTML = playerScore
+  }
 }
