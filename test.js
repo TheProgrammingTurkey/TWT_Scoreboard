@@ -2,6 +2,7 @@ let columns = 2;
 let rows = 2;
 let table = document.getElementById("gameTable");
 
+
 //add column
 $("#addColumnChild").click(function () {
   let nameRow = document.getElementById("nameRow");
@@ -84,3 +85,10 @@ function calcScore(){
 
 
 
+function addScore(){
+  for(let i = 0; i < columns; i++){
+    
+  }
+  
+  
+}
