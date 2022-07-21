@@ -92,8 +92,17 @@ function calcScore(){
 
 function addScore(){
   for(let i = 0; i < columns; i++){
-    
+    let playerScores = document.getElementsByClassName(`player-${i}`)
+    let playerScore = 0
   }
   
   
+}
+
+
+
+function  minusScore(){
+  for(let i = 0; i < columns; i++){
+    
+  }
 }
