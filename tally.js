@@ -103,5 +103,5 @@ function addScore(){
 
 function  minusScore(){
   playerScore-=1
-  document.getElementById(`player-ovr-score-0`).innerHTML = playerScore
+  document.getElementById(`player-ovr-score-${i}`).innerHTML = playerScore
 }
