@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="https://glitch.com/favicon.ico" />
+    <title>TWT Scoreboard</title>
+    <link rel="stylesheet" href="/style.css" />
+    <script src="/test.js" defer></script>
+  </head>
+  <body>
+    <table class="top">
+      <tr>
+        <th class="players">Players</th>
+        <th rowspan="3"><img src="https://cdn.glitch.global/94fe4849-a8f5-40a3-8e1b-540b22a4c064/OIP-removebg-preview.png?v=1657923068282"></th>
+        <th class="rounds">Rounds</th>
+      </tr>
+      <tr>
+        <td class="players addSubtract" id="addColumnChild">Add</td>
+        <td class="rounds addSubtract" id="addRowChild">Add</td>
+      </tr>
+      <tr>
+        <td class="players addSubtract" id="deleteColumnChild">Subtract</td>
+        <td class="rounds addSubtract" id="deleteRowChild">Subtract</td>
+      </tr>
+    </table>
+    
+    <br>
+    <br>
+    <br>
+    <br>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    
+    <table id="gameTable">
+      <tr id="nameRow">
+        <th><input placeholder="Name" class="name"></th>
+        <th><input placeholder="Name" class="name"></th>
+      </tr>
+      
+      <tr id="ovrScoreRow">
+        <th><div id="player-ovr-score-0" class="ovrScore">0</div></th>
+        <th><div id="player-ovr-score-1" class="ovrScore">0</div></th>
+      </tr>
+      
+      <tr class="plus-minus">
+        <button value="-">
+          
+        </button> value="-" class="button-minus" data-field="quantity">
+        <input type="button" value="+" class="button-plus" data-field="quantity">
+      </tr>
+    </table>
+  </body>
+</html>

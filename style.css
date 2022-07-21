@@ -105,10 +105,11 @@ td{
   font-size: 25px;
 }
 
+
 @media only screen and (max-width: 900px){
   
   img{
-    width: 200px;;
+    width: 200px;
   }
   
   th{
@@ -168,3 +169,4 @@ td{
   }
   
 }
+
