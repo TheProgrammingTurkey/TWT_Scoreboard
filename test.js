@@ -92,16 +92,14 @@ function calcScore(){
 let playerScore = 0
 
 function addScore(){
-  for(let i = 0; i < columns; i++){
-    playerScore+=1
-    document.getElementById(`player-ovr-score-0`).innerHTML = playerScore
-  }
+  playerScore+=1
+  document.getElementById(`player-ovr-score-0`).innerHTML = playerScore
+
 }
 
 
 
 function  minusScore(){
-  for(let i = 0; i < columns; i++){
-    
-  }
+  playerScore-=1
+  document.getElementById(`player-ovr-score-0`).innerHTML = playerScore
 }
