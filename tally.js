@@ -17,7 +17,7 @@ $("#addColumnChild").click(function () {
   
   let plusMinusRow = document.getElementById("plusMinusRow");
   let plusMinusCell = document.createElement("th");
-  plusMinusCell.innerHTML = `<button class="button-plus" id="button-plus-${columns}" onclick="addScore()">&plus;</button><button class="button-minus" id="button-minus-${columns}" onclick="minusScore()">&minus;</button>`;
+  plusMinusCell.innerHTML = `<button class="button-plus" onclick="addScore${columns}()">&plus;</button><button class="button-minus" onclick="minusScore${columns}()">&minus;</button>`;
   plusMinusRow.appendChild(plusMinusCell);
 
   let rowElements = document.getElementsByClassName("score-row");
@@ -106,59 +106,59 @@ function minusScore1(){
 
 function addScore2(){
   playerScore2+=1
-  document.getElementById("player-ovr-score-1").innerHTML = playerScore2
+  document.getElementById("player-ovr-score-2").innerHTML = playerScore2
 }
 function minusScore2(){
   playerScore2-=1
-  document.getElementById("player-ovr-score-1").innerHTML = playerScore2
+  document.getElementById("player-ovr-score-2").innerHTML = playerScore2
 }
 
 
 function addScore3(){
   playerScore3+=1
-  document.getElementById("player-ovr-score-1").innerHTML = playerScore3
+  document.getElementById("player-ovr-score-3").innerHTML = playerScore3
 }
 function minusScore3(){
   playerScore3-=1
-  document.getElementById("player-ovr-score-1").innerHTML = playerScore3
+  document.getElementById("player-ovr-score-3").innerHTML = playerScore3
 }
 
 
 function addScore4(){
   playerScore4+=1
-  document.getElementById("player-ovr-score-1").innerHTML = playerScore4
+  document.getElementById("player-ovr-score-4").innerHTML = playerScore4
 }
 function minusScore4(){
   playerScore4-=1
-  document.getElementById("player-ovr-score-1").innerHTML = playerScore4
+  document.getElementById("player-ovr-score-4").innerHTML = playerScore4
 }
 
 
 function addScore5(){
   playerScore5+=1
-  document.getElementById("player-ovr-score-1").innerHTML = playerScore5
+  document.getElementById("player-ovr-score-5").innerHTML = playerScore5
 }
 function minusScore5(){
   playerScore5-=1
-  document.getElementById("player-ovr-score-1").innerHTML = playerScore5
+  document.getElementById("player-ovr-score-5").innerHTML = playerScore5
 }
 
 
 function addScore6(){
   playerScore6+=1
-  document.getElementById("player-ovr-score-1").innerHTML = playerScore6
+  document.getElementById("player-ovr-score-6").innerHTML = playerScore6
 }
 function minusScore6(){
   playerScore6-=1
-  document.getElementById("player-ovr-score-1").innerHTML = playerScore6
+  document.getElementById("player-ovr-score-6").innerHTML = playerScore6
 }
 
 
 function addScore7(){
   playerScore7+=1
-  document.getElementById("player-ovr-score-1").innerHTML = playerScore7
+  document.getElementById("player-ovr-score-7").innerHTML = playerScore7
 }
 function minusScore7(){
   playerScore7-=1
-  document.getElementById("player-ovr-score-1").innerHTML = playerScore7
+  document.getElementById("player-ovr-score-7").innerHTML = playerScore7
 }
