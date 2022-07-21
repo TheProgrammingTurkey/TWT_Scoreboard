@@ -79,3 +79,8 @@ function calcScore(){
     document.getElementById(`player-ovr-score-${i}`).innerHTML = playerScore
   }
 }
+
+
+
+
+
