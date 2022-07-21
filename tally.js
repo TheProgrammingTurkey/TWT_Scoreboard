@@ -74,28 +74,91 @@ $("#deleteColumnChild").click(function () {
 
 
 
-let playerScore = 0
+let playerScore0 = 0
+let playerScore1 = 0
+let playerScore2 = 0
+let playerScore3 = 0
+let playerScore4 = 0
+let playerScore5 = 0
+let playerScore6 = 0
+let playerScore7 = 0
+
 
 function addScore0(){
-  playerScore+=1
-  document.getElementById("player-ovr-score-0").innerHTML = playerScore
+  playerScore0+=1
+  document.getElementById("player-ovr-score-0").innerHTML = playerScore0
 }
-
-
-
 function minusScore0(){
-  playerScore-=1
-  document.getElementById("player-ovr-score-0").innerHTML = playerScore
+  playerScore0-=1
+  document.getElementById("player-ovr-score-0").innerHTML = playerScore0
 }
+
 
 function addScore1(){
-  playerScore+=1
-  document.getElementById("player-ovr-score-1").innerHTML = playerScore
+  playerScore1+=1
+  document.getElementById("player-ovr-score-1").innerHTML = playerScore1
+}
+function minusScore1(){
+  playerScore1-=1
+  document.getElementById("player-ovr-score-1").innerHTML = playerScore1
 }
 
 
+function addScore2(){
+  playerScore2+=1
+  document.getElementById("player-ovr-score-1").innerHTML = playerScore2
+}
+function minusScore2(){
+  playerScore2-=1
+  document.getElementById("player-ovr-score-1").innerHTML = playerScore2
+}
 
-function minusScore1(){
-  playerScore-=1
-  document.getElementById("player-ovr-score-1").innerHTML = playerScore
+
+function addScore3(){
+  playerScore3+=1
+  document.getElementById("player-ovr-score-1").innerHTML = playerScore3
+}
+function minusScore3(){
+  playerScore3-=1
+  document.getElementById("player-ovr-score-1").innerHTML = playerScore3
+}
+
+
+function addScore4(){
+  playerScore4+=1
+  document.getElementById("player-ovr-score-1").innerHTML = playerScore4
+}
+function minusScore4(){
+  playerScore4-=1
+  document.getElementById("player-ovr-score-1").innerHTML = playerScore4
+}
+
+
+function addScore5(){
+  playerScore5+=1
+  document.getElementById("player-ovr-score-1").innerHTML = playerScore5
+}
+function minusScore5(){
+  playerScore5-=1
+  document.getElementById("player-ovr-score-1").innerHTML = playerScore5
+}
+
+
+function addScore6(){
+  playerScore6+=1
+  document.getElementById("player-ovr-score-1").innerHTML = playerScore6
+}
+function minusScore6(){
+  playerScore6-=1
+  document.getElementById("player-ovr-score-1").innerHTML = playerScore6
+}
+
+
+function addScore7(){
+  playerScore7+=1
+  document.getElementById("player-ovr-score-1").innerHTML = playerScore7
+}
+function minusScore7(){
+  playerScore7-=1
+  document.getElementById("player-ovr-score-1").innerHTML = playerScore7
 }
