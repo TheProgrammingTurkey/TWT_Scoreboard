@@ -85,15 +85,3 @@ function calcScore(){
     document.getElementById(`player-ovr-score-${i}`).innerHTML = playerScore
   }
 }
-
-
-
-
-
-function addScore(){
-  for(let i = 0; i < columns; i++){
-    
-  }
-  
-  
-}
