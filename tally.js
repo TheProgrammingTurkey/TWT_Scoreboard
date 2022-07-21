@@ -87,3 +87,15 @@ function minusScore0(){
   playerScore-=1
   document.getElementById("player-ovr-score-0").innerHTML = playerScore
 }
+
+function addScore1(){
+  playerScore+=1
+  document.getElementById("player-ovr-score-1").innerHTML = playerScore
+}
+
+
+
+function minusScore1(){
+  playerScore-=1
+  document.getElementById("player-ovr-score-1").innerHTML = playerScore
+}
