@@ -85,3 +85,23 @@ function calcScore(){
     document.getElementById(`player-ovr-score-${i}`).innerHTML = playerScore
   }
 }
+
+
+
+
+let playerScore = 0
+
+function addScore(){
+  for(let i = 0; i < columns; i++){
+  playerScore+=1
+  document.getElementById(`player-ovr-score-${i}`).innerHTML = playerScore
+  }
+
+}
+
+
+
+function  minusScore(){
+  playerScore-=1
+  document.getElementById(`player-ovr-score-0`).innerHTML = playerScore
+}
