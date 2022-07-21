@@ -92,8 +92,8 @@ function calcScore(){
 let playerScore = 0
 
 function addScore(){
-  for(let i = 0; i < columns; i++){
   playerScore+=1
+  for(let i = 0; i < columns; i++){
   document.getElementById(`player-ovr-score-${i}`).innerHTML = playerScore
   }
 
@@ -102,8 +102,8 @@ function addScore(){
 
 
 function minusScore(){
-  for(let i = 0; i < columns; i++){
   playerScore-=1
+  for(let i = 0; i < columns; i++){
   document.getElementById(`player-ovr-score-${i}`).innerHTML = playerScore
   }
 }
