@@ -5,6 +5,9 @@ let table = document.getElementById("gameTable");
 
 //add column
 $("#addColumnChild").click(function () {
+  if(columns >= 8) 
+    return
+  
   let nameRow = document.getElementById("nameRow");
   let nameCell = document.createElement("th");
   nameCell.innerHTML = "<input placeholder='Name' class='name' >";
@@ -32,6 +35,7 @@ $("#addColumnChild").click(function () {
 
 //add row
 $("#addRowChild").click(function () {
+  
   let row = document.createElement("tr");
   row.classList.add("score-row");
   row.setAttribute("id", "score-row-"+rows)
