@@ -20,7 +20,7 @@ $("#addColumnChild").click(function () {
   
   let plusMinusRow = document.getElementById("plusMinusRow");
   let plusMinusCell = document.createElement("th");
-  plusMinusCell.innerHTML = `<button class="button-plus" id="minusScore${columns}" onclick="addScore${columns}()">&plus;</button><button class="button-minus" id="minusScore${columns}" onclick="minusScore${columns}()">&minus;</button>`;
+  plusMinusCell.innerHTML = `<button class="button-plus" onclick="addScore${columns}()">&plus;</button><button class="button-minus" onclick="minusScore${columns}()">&minus;</button>`;
   plusMinusRow.appendChild(plusMinusCell);
 
   let rowElements = document.getElementsByClassName("score-row");
@@ -41,14 +41,8 @@ $("#addRowChild").click(function () {
   row.setAttribute("id", "score-row-"+rows)
 
   for (let i = 0; i < columns; i++) {
-    
-    
-    let input = document.getElementsByClassName(`player-${i}`);
-    input.value = "myValue"
-    
-    
     let cell = document.createElement("td");
-    cell.innerHTML = `<input class='score player-${i}'>`;
+    cell.innerHTML = `<input class='score player-${columns}' type="number" value=0>`;
     row.appendChild(cell);
   }
   table.appendChild(row);
