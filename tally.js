@@ -41,8 +41,14 @@ $("#addRowChild").click(function () {
   row.setAttribute("id", "score-row-"+rows)
 
   for (let i = 0; i < columns; i++) {
+    
+    
+    let input = document.getElementsByClassName(`player-${i}`);
+    input.value = "myValue"
+    
+    
     let cell = document.createElement("td");
-    cell.innerHTML = `<input class='score player-${i}' value=playerScore${i}>`;
+    cell.innerHTML = `<input class='score player-${i}'>`;
     row.appendChild(cell);
   }
   table.appendChild(row);
@@ -75,7 +81,6 @@ $("#deleteColumnChild").click(function () {
   }
   columns -= 1;
 });
-
 
 
 let playerScore0 = 0
