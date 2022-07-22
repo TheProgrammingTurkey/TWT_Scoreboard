@@ -36,6 +36,9 @@ $("#addColumnChild").click(function () {
 //add row
 $("#addRowChild").click(function () {
   
+  let score = 
+  
+  
   let row = document.createElement("tr");
   row.classList.add("score-row");
   row.setAttribute("id", "score-row-"+rows)
