@@ -3,7 +3,7 @@ let rows = 2;
 let table = document.getElementById("gameTable");
 
 
-//add column
+//add player
 $("#addColumnChild").click(function () {
   if(columns >= 8) 
     return
@@ -33,8 +33,12 @@ $("#addColumnChild").click(function () {
   columns += 1;
 });
 
-//add row
+//add round
 $("#addRowChild").click(function () {
+  
+  let score = document.getElementById("player-0")
+  score.innerHTML = 
+  
   
   let row = document.createElement("tr");
   row.classList.add("score-row");
@@ -42,7 +46,7 @@ $("#addRowChild").click(function () {
 
   for (let i = 0; i < columns; i++) {
     let cell = document.createElement("td");
-    cell.innerHTML = `<input class='score player-${columns}' type="number" value=0>`;
+    cell.innerHTML = `<input class='score player-${columns}'>`;
     row.appendChild(cell);
   }
   table.appendChild(row);
@@ -50,7 +54,7 @@ $("#addRowChild").click(function () {
 
 });
 
-//delete row
+//delete round
 $("#deleteRowChild").click(function () {
   if(rows <= 2) 
     return
@@ -59,7 +63,7 @@ $("#deleteRowChild").click(function () {
   rows-=1
 });
 
-//delete column
+//delete player
 $("#deleteColumnChild").click(function () {
   
   if(columns <= 2)
