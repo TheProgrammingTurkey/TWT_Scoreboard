@@ -50,7 +50,7 @@ $("#addRowChild").click(function () {
   
   
   let words = ("words")
-  let score = document.getElementsByClassName("player-0")
+  let score = document.getElementById("qwop")
   score.innerHTML = words
   console.log(score.innerHTML)
 
