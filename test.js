@@ -49,9 +49,8 @@ $("#addRowChild").click(function () {
   
   
   
-  let words = ("words")
   let score = document.getElementById("qwop")
-  score.innerHTML = words
+  score.innerHTML = playerScore0
   console.log(score.innerHTML)
 
 });

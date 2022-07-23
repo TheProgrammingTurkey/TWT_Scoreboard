@@ -46,7 +46,7 @@ $("#addRowChild").click(function () {
 
   for (let i = 0; i < columns; i++) {
     let cell = document.createElement("td");
-    cell.innerHTML = `<input class='score player-${columns}'>`;
+    cell.innerHTML = `<input class='score player-${columns}' type="number" value=0>`;
     row.appendChild(cell);
   }
   table.appendChild(row);
