@@ -34,23 +34,25 @@ $("#addColumnChild").click(function () {
 });
 
 //add round
-$("#addRowChild").click(function () {
-  
-  let score = document.getElementById("player-0")
-  score.innerHTML = 
-  
-  
+$("#addRowChild").click(function () {  
   let row = document.createElement("tr");
   row.classList.add("score-row");
   row.setAttribute("id", "score-row-"+rows)
 
   for (let i = 0; i < columns; i++) {
     let cell = document.createElement("td");
-    cell.innerHTML = `<input class='score player-${columns}'>`;
+    cell.innerHTML = `<div class='score player-${columns}'></div>`;
     row.appendChild(cell);
   }
   table.appendChild(row);
   rows+=1
+  
+  
+  
+  let words = ("words")
+  let score = document.getElementById("qwop")
+  score.innerHTML = words
+  console.log(score.innerHTML)
 
 });
 
