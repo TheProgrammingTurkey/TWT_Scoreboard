@@ -35,7 +35,7 @@ $("#addColumnChild").click(function () {
 
 //add round
 $("#addRowChild").click(function () {  
-  if(rows >= 16) 
+  if(rows >= 5) 
     return
   
   let row = document.createElement("tr");
@@ -50,77 +50,51 @@ $("#addRowChild").click(function () {
   table.appendChild(row);
   rows+=1
   
+  
   if (rows == 3) {
-    let score = document.getElementById('player-2')
+    let score = document.getElementById('player-2-0')
+    score.innerHTML = playerScore0
+  }
+  
+  if (rows == 3) {
+    let score = document.getElementById('player-2-1')
+    score.innerHTML = playerScore1
+  }
+  
+  if (rows == 3) {
+    let score = document.getElementById('player-2-2')
+    score.innerHTML = playerScore2
+  }
+  
+  if (rows == 4) {
+    let score = document.getElementById('player-3-0')
     score.innerHTML = playerScore0
   }
   
   if (rows == 4) {
-    let score = document.getElementById('player-3')
+    let score = document.getElementById('player-3-1')
+    score.innerHTML = playerScore1
+  }
+  
+  if (rows == 4) {
+    let score = document.getElementById('player-3-2')
     score.innerHTML = playerScore0
   }
   
   if (rows == 5) {
-    let score = document.getElementById('player-4')
-    score.innerHTML = playerScore0
-  }
-                        
-  if (rows == 6) {
-    let score = document.getElementById('player-5')
-    score.innerHTML = playerScore0
-  }
-
-  if (rows == 7) {
-    let score = document.getElementById('player-6')
+    let score = document.getElementById('player-4-0')
     score.innerHTML = playerScore0
   }
   
-  if (rows == 8) {
-    let score = document.getElementById('player-7')
+  if (rows == 5) {
+    let score = document.getElementById('player-4-1')
     score.innerHTML = playerScore0
   }
   
-  if (rows == 9) {
-    let score = document.getElementById('player-8')
+  if (rows == 5) {
+    let score = document.getElementById('player-4-2')
     score.innerHTML = playerScore0
   }
-
-  if (rows == 10) {
-    let score = document.getElementById('player-9')
-    score.innerHTML = playerScore0
-  }
-  
-  if (rows == 11) {
-    let score = document.getElementById('player-10')
-    score.innerHTML = playerScore0
-  }
-  
-  if (rows == 12) {
-    let score = document.getElementById('player-11')
-    score.innerHTML = playerScore0
-  }
-  
-  if (rows == 13) {
-    let score = document.getElementById('player-12')
-    score.innerHTML = playerScore0
-  }
-  
-  if (rows == 14) {
-    let score = document.getElementById('player-13')
-    score.innerHTML = playerScore0
-  }
-  
-  if (rows == 15) {
-    let score = document.getElementById('player-14')
-    score.innerHTML = playerScore0
-  }
-  
-  if (rows == 16) {
-    let score = document.getElementById('player-15')
-    score.innerHTML = playerScore0
-  }
-  
-  
                         
 });
 
