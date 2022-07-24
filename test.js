@@ -27,7 +27,7 @@ $("#addColumnChild").click(function () {
 
   for (let i = 0; i < rowElements.length; i++) {
     let cell = document.createElement("td");
-    cell.innerHTML = `<input class='score player-${columns}' type="number" value=0>`;
+    cell.innerHTML = `<div class='score player-${columns}'></div>`;
     rowElements[i].appendChild(cell);
   }
   columns += 1;
@@ -48,29 +48,82 @@ $("#addRowChild").click(function () {
   rows+=1
   
   if (rows == 3) {
-    let score2 = document.getElementById('player-2')
-    score2.innerHTML = playerScore0
-}
-  
-  if (rows == 4) {
-    let score3 = document.getElementById('player-3')
-    score3.innerHTML = playerScore0
+    let score = document.getElementById('player-2')
+    score.innerHTML = playerScore0
   }
   
-  if (rows == ) {
-    let score = document.getElementById('player-')
+  if (rows == 3) {
+    let score = document.getElementById('player-2')
+    score.innerHTML = playerScore0
+  }
+  
+  if (rows == 4) {
+    let score = document.getElementById('player-3')
+    score.innerHTML = playerScore0
+  }
+  
+  if (rows == 5) {
+    let score = document.getElementById('player-4')
     score.innerHTML = playerScore0
   }
                         
-  if (rows == ) {
+  if (rows == 6) {
+    let score = document.getElementById('player-5')
+    score.innerHTML = playerScore0
+  }
+
+  if (rows == 7) {
+    let score = document.getElementById('player-6')
+    score.innerHTML = playerScore0
+  }
+  
+  if (rows == 8) {
+    let score = document.getElementById('player-7')
+    score.innerHTML = playerScore0
+  }
+  
+  if (rows == 9) {
+    let score = document.getElementById('player-8')
+    score.innerHTML = playerScore0
+  }
+
+  if (rows == 10) {
+    let score = document.getElementById('player-9')
+    score.innerHTML = playerScore0
+  }
+  
+  if (rows == 11) {
+    let score = document.getElementById('player-')
+    score.innerHTML = playerScore0
+  }
+  
+  if (rows == 12) {
+    let score = document.getElementById('player-')
+    score.innerHTML = playerScore0
+  }
+  
+  if (rows == 13) {
+    let score = document.getElementById('player-')
+    score.innerHTML = playerScore0
+  }
+  
+  if (rows == 14) {
+    let score = document.getElementById('player-')
+    score.innerHTML = playerScore0
+  }
+  
+  if (rows == 15) {
+    let score = document.getElementById('player-')
+    score.innerHTML = playerScore0
+  }
+  
+  if (rows == 16) {
     let score = document.getElementById('player-')
     score.innerHTML = playerScore0
   }
   
   
-  
-  
-
+                        
 });
 
 //delete round
