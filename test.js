@@ -39,9 +39,9 @@ $("#addRowChild").click(function () {
   row.classList.add("score-row");
   row.setAttribute("id", "score-row-"+rows)
 
-  for (let i = 0; i < columns; i++) {
+  for (let i = 0; i < 1; i++) {
     let cell = document.createElement("td");
-    cell.innerHTML = `<input class='score' id='qwop'>`;
+    cell.innerHTML = `<div class='score' id='qwop'></div>`;
     row.appendChild(cell);
   }
   table.appendChild(row);
@@ -50,7 +50,7 @@ $("#addRowChild").click(function () {
   
   
   let score = document.getElementById("qwop")
-  score.innerHTML = playerScore0
+  score.innerHTML = ("5")
   console.log(score.innerHTML)
 
 });

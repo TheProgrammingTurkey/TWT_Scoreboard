@@ -34,12 +34,7 @@ $("#addColumnChild").click(function () {
 });
 
 //add round
-$("#addRowChild").click(function () {
-  
-  let score = document.getElementById("player-0")
-  score.innerHTML = 
-  
-  
+$("#addRowChild").click(function () { 
   let row = document.createElement("tr");
   row.classList.add("score-row");
   row.setAttribute("id", "score-row-"+rows)
