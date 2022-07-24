@@ -41,17 +41,25 @@ $("#addRowChild").click(function () {
 
   for (let i = 0; i < 1; i++) {
     let cell = document.createElement("td");
-    cell.innerHTML = `<div class='score' id='qwop'></div>`;
+    cell.innerHTML = `<div class='score' id='player-${rows}'></div>`;
     row.appendChild(cell);
   }
   table.appendChild(row);
   rows+=1
   
+  if (rows = 3) {
+    const score = document.getElementById('player-2')
+    score.innerHTML = playerScore0
+}
+  
+  if (rows = 4) {
+    let score1 = document.getElementById('player-3')
+    score1.innerHTML = playerScore1
+  }
   
   
-  let score = document.getElementById("qwop")
-  score.innerHTML = ("5")
-  console.log(score.innerHTML)
+  
+  
 
 });
 
