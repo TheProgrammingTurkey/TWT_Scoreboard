@@ -35,22 +35,20 @@ $("#addColumnChild").click(function () {
 
 //add round
 $("#addRowChild").click(function () {  
+  if(rows >= 16) 
+    return
+  
   let row = document.createElement("tr");
   row.classList.add("score-row");
   row.setAttribute("id", "score-row-"+rows)
 
   for (let i = 0; i < columns; i++) {
     let cell = document.createElement("td");
-    cell.innerHTML = `<div class='score' id='player-${rows}'></div>`;
+    cell.innerHTML = `<div class='score' id='player-${rows}-${i}'></div>`;
     row.appendChild(cell);
   }
   table.appendChild(row);
   rows+=1
-  
-  if (rows == 3) {
-    let score = document.getElementById('player-2')
-    score.innerHTML = playerScore0
-  }
   
   if (rows == 3) {
     let score = document.getElementById('player-2')
@@ -93,32 +91,32 @@ $("#addRowChild").click(function () {
   }
   
   if (rows == 11) {
-    let score = document.getElementById('player-')
+    let score = document.getElementById('player-10')
     score.innerHTML = playerScore0
   }
   
   if (rows == 12) {
-    let score = document.getElementById('player-')
+    let score = document.getElementById('player-11')
     score.innerHTML = playerScore0
   }
   
   if (rows == 13) {
-    let score = document.getElementById('player-')
+    let score = document.getElementById('player-12')
     score.innerHTML = playerScore0
   }
   
   if (rows == 14) {
-    let score = document.getElementById('player-')
+    let score = document.getElementById('player-13')
     score.innerHTML = playerScore0
   }
   
   if (rows == 15) {
-    let score = document.getElementById('player-')
+    let score = document.getElementById('player-14')
     score.innerHTML = playerScore0
   }
   
   if (rows == 16) {
-    let score = document.getElementById('player-')
+    let score = document.getElementById('player-15')
     score.innerHTML = playerScore0
   }
   
