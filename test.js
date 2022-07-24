@@ -39,7 +39,7 @@ $("#addRowChild").click(function () {
   row.classList.add("score-row");
   row.setAttribute("id", "score-row-"+rows)
 
-  for (let i = 0; i < 1; i++) {
+  for (let i = 0; i < columns; i++) {
     let cell = document.createElement("td");
     cell.innerHTML = `<div class='score' id='player-${rows}'></div>`;
     row.appendChild(cell);
@@ -47,14 +47,24 @@ $("#addRowChild").click(function () {
   table.appendChild(row);
   rows+=1
   
-  if (rows = 3) {
-    const score = document.getElementById('player-2')
-    score.innerHTML = playerScore0
+  if (rows == 3) {
+    let score2 = document.getElementById('player-2')
+    score2.innerHTML = playerScore0
 }
   
-  if (rows = 4) {
-    let score1 = document.getElementById('player-3')
-    score1.innerHTML = playerScore1
+  if (rows == 4) {
+    let score3 = document.getElementById('player-3')
+    score3.innerHTML = playerScore0
+  }
+  
+  if (rows == ) {
+    let score = document.getElementById('player-')
+    score.innerHTML = playerScore0
+  }
+                        
+  if (rows == ) {
+    let score = document.getElementById('player-')
+    score.innerHTML = playerScore0
   }
   
   
