@@ -35,7 +35,7 @@ $("#addColumnChild").click(function () {
 
 //add round
 $("#addRowChild").click(function () {  
-  if(rows >= 122) 
+  if(rows >= 14) 
     return
   
   let row = document.createElement("tr");
@@ -337,7 +337,7 @@ $("#addRowChild").click(function () {
   }
   
   if (rows == 10) {
-    let score = document.getElementById('player--1')
+    let score = document.getElementById('player-9-1')
     score.innerHTML = playerScore1
   }
   
