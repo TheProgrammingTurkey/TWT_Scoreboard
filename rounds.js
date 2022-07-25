@@ -4,7 +4,7 @@ let table = document.getElementById("gameTable");
 
 //add column
 $("#addColumnChild").click(function () {
-  if(columns >= 8) 
+  if(columns >= 7) 
     return
   
   let nameRow = document.getElementById("nameRow");
