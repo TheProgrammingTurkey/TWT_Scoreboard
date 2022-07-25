@@ -12,7 +12,11 @@
     <table class="top">
       <tr>
         <th class="players">Players</th>
-        <th rowspan="3"><img src="https://cdn.glitch.global/94fe4849-a8f5-40a3-8e1b-540b22a4c064/OIP-removebg-preview.png?v=1657923068282"></th>
+        <th rowspan="2">
+          <img
+            src="https://cdn.glitch.global/94fe4849-a8f5-40a3-8e1b-540b22a4c064/OIP-removebg-preview.png?v=1657923068282"
+          />
+        </th>
         <th class="rounds">Rounds</th>
       </tr>
       <tr>
@@ -21,31 +25,40 @@
       </tr>
       <tr>
         <td class="players addSubtract" id="deleteColumnChild">Subtract</td>
+        <td class="info">
+          Directions: Press the add or subtract buttons in the top left to change the amount of players. Use the green and red plus and minus buttons to change the score. When a round is over press the add round button in the top right and a new row will show everyones score after that particular round.
+        </td>
         <td class="rounds addSubtract" id="deleteRowChild">Subtract</td>
       </tr>
     </table>
-    
-    <br>
-    <br>
-    <br>
-    <br>
-    
+
+    <br />
+    <br />
+    <br />
+    <br />
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-    
+
     <table id="gameTable">
       <tr id="nameRow">
-        <th><input placeholder="Name" class="name"></th>
-        <th><input placeholder="Name" class="name"></th>
+        <th><input placeholder="Name" class="name" /></th>
+        <th><input placeholder="Name" class="name" /></th>
       </tr>
-      
+
       <tr id="ovrScoreRow">
         <th><div id="player-ovr-score-0" class="ovrScore">0</div></th>
         <th><div id="player-ovr-score-1" class="ovrScore">0</div></th>
       </tr>
-      
+
       <tr id="plusMinusRow">
-        <th><button class="button-plus" onclick="addScore0()">&plus;</button><button class="button-minus" onclick="minusScore0()">&minus;</button></th>
-        <th><button class="button-plus" onclick="addScore1()">&plus;</button><button class="button-minus" onclick="minusScore1()">&minus;</button></th>
+        <th>
+          <button class="button-plus" onclick="addScore0()">&plus;</button
+          ><button class="button-minus" onclick="minusScore0()">&minus;</button>
+        </th>
+        <th>
+          <button class="button-plus" onclick="addScore1()">&plus;</button
+          ><button class="button-minus" onclick="minusScore1()">&minus;</button>
+        </th>
       </tr>
     </table>
   </body>
