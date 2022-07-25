@@ -6,153 +6,24 @@ html{
   margin-top: 3%;
   background-color: #343a40;
   font-family: "Ubuntu", sans-serif;
-}
-
-.addSubtract{
-  cursor: pointer;
-}
-
-.top{
-  width: 100%;
   text-align: center;
-  padding-left: 8%;
-  padding-right: 8%;
-}
-
-.players{
-  width: 5%;
-}
-
-.rounds{
-  width: 5%
 }
 
 img{
   width: 300px;
 }
 
-#gameTable{
-  width: 100%;
-  text-align: center;
+h1{
+  color: #5e8bc5;
+  font-size: 50px;
+  margin-top: 15px;
 }
-
-.name{
-  border-bottom: 3px solid #335A8E;
-  background-color: transparent;
-  border-left: 0px;
-  border-right: 0px;
-  border-top: 0px;
-  width: 160px;
-  color: #759BCD;
-  font-size: 26px;
-}
-
-::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
-  color: #759BCD;
-  opacity: 1; /* Firefox */
-}
-
-::-ms-input-placeholder { /* Microsoft Edge */
-  color: #759BCD;
-}
-
-:-ms-input-placeholder { /* Internet Explorer 10-11 */
-  color: #759BCD;
-}
-
-
-
-.score{
-  border-bottom: 3px solid #294872;
-  background-color: transparent;
-  border-left: 0px;
-  border-right: 0px;
-  border-top: 0px;
-  width: 130px;
-  color: #759BCD;
-  font-size: 20px;
-}
-
-.ovrScore{
-  border: 3px solid #335A8E;
-  width: 160px;
-  margin-inline: auto;
-  border-radius: 3px;
-  font-size: 50px
-}
-
-input{
-  text-align: center;
-  background-color: #D1DEEE;
-  border: 2px solid #2C4E7A;
-  border-radius: 3px;
-  width: 35%;
-}
-
-input::-webkit-outer-spin-button,
-      input::-webkit-inner-spin-button {
-        display: none;
-      }
-
-th{
-  color: #759BCD;
-  font-size: 40px;
-  padding-bottom: 20px;
-}
-
-td{
-  color: #8CACD5;
-  font-size: 25px;
-}
-
-
-.button-plus{
-  background-color: green;
-  width: 60px;
-  margin-right: 6px;
-  cursor: pointer;
-  border-radius: 6px;
-}
-
-.button-minus{
-  background-color: red;
-  width: 60px;
-  margin-left: 6px;
-  cursor: pointer;
-  border-radius: 6px;
-}
-
 
 @media only screen and (max-width: 900px){
   
   img{
     width: 200px;
   }
-  
-  th{
-    font-size: 30px;
-    padding-bottom: 15px;
-  }
-  
-  td{
-    font-size: 20px;
-  }
-  
-  .name{
-    font-size: 15px;
-    width: 80px;
-  }
-  
-  .score{
-    font-size: 15px;
-    width: 60px;
-  }
-  
-  .ovrScore{
-    font-size: 22px;
-    width: 80px;
-  }
-  
 }
 
 @media only screen and (max-width: 500px){
@@ -160,30 +31,5 @@ td{
   img{
     width: 100px;
   }
-  
-  th{
-    font-size: 20px;
-    padding-bottom: 10px;
-  }
-  
-  td{
-    font-size: 14px;
-  }
-  
-  .name{
-    font-size: 14px;
-    width: 75px;
-  }
-  
-  .score{
-    font-size: 15px;
-    width: 50px;
-  }
-  
-  .ovrScore{
-    font-size: 25px;
-    width: 75px;
-  }
-  
 }
 
