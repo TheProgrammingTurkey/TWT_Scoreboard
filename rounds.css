@@ -31,6 +31,14 @@ img{
   width: 300px;
 }
 
+.info{
+  margin-top: 0;
+  padding-top: 0;
+  padding-right: 50px;
+  padding-left: 50px;
+  font-size: 17px;
+}
+
 #gameTable{
   width: 100%;
   text-align: center;
@@ -112,6 +120,10 @@ td{
     width: 200px;
   }
   
+  .info{
+  font-size: 10px;
+  }
+  
   th{
     font-size: 30px;
     padding-bottom: 15px;
@@ -142,6 +154,12 @@ td{
   
   img{
     width: 100px;
+  }
+  
+  .info{
+  padding-right: 0;
+  padding-left: 0;
+  font-size: 8px;
   }
   
   th{
