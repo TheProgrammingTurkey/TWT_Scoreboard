@@ -78,7 +78,7 @@ $("#addRowChild").click(function () {
   
   if (rows == 4) {
     let score = document.getElementById('player-3-2')
-    score.innerHTML = playerScore0
+    score.innerHTML = playerScore2
   }
   
   if (rows == 5) {
@@ -88,12 +88,12 @@ $("#addRowChild").click(function () {
   
   if (rows == 5) {
     let score = document.getElementById('player-4-1')
-    score.innerHTML = playerScore0
+    score.innerHTML = playerScore1
   }
   
   if (rows == 5) {
     let score = document.getElementById('player-4-2')
-    score.innerHTML = playerScore0
+    score.innerHTML = playerScore2
   }
                         
 });
