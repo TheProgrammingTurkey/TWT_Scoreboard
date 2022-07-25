@@ -27,7 +27,7 @@ $("#addColumnChild").click(function () {
 
   for (let i = 0; i < rowElements.length; i++) {
     let cell = document.createElement("td");
-    cell.innerHTML = `<div class='score player-${columns}'></div>`;
+    cell.innerHTML = `<div class='score player-${rows}-${i}'></div>`;
     rowElements[i].appendChild(cell);
   }
   columns += 1;
