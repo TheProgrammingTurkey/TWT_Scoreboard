@@ -35,7 +35,7 @@ $("#addColumnChild").click(function () {
 
 //add round
 $("#addRowChild").click(function () {  
-  if(rows >= 5) 
+  if(rows >= 122) 
     return
   
   let row = document.createElement("tr");
@@ -66,6 +66,31 @@ $("#addRowChild").click(function () {
     score.innerHTML = playerScore2
   }
   
+  if (rows == 3) {
+    let score = document.getElementById('player-2-3')
+    score.innerHTML = playerScore3
+  }
+  
+  if (rows == 3) {
+    let score = document.getElementById('player-2-4')
+    score.innerHTML = playerScore4
+  }
+  
+  if (rows == 3) {
+    let score = document.getElementById('player-2-5')
+    score.innerHTML = playerScore5
+  }
+  
+  if (rows == 3) {
+    let score = document.getElementById('player-2-6')
+    score.innerHTML = playerScore6
+  }
+  
+  if (rows == 3) {
+    let score = document.getElementById('player-2-7')
+    score.innerHTML = playerScore7
+  }
+  
   if (rows == 4) {
     let score = document.getElementById('player-3-0')
     score.innerHTML = playerScore0
@@ -81,6 +106,31 @@ $("#addRowChild").click(function () {
     score.innerHTML = playerScore2
   }
   
+  if (rows == 4) {
+    let score = document.getElementById('player-3-3')
+    score.innerHTML = playerScore3
+  }
+  
+  if (rows == 4) {
+    let score = document.getElementById('player-3-4')
+    score.innerHTML = playerScore4
+  }
+  
+  if (rows == 4) {
+    let score = document.getElementById('player-3-5')
+    score.innerHTML = playerScore5
+  }
+  
+  if (rows == 4) {
+    let score = document.getElementById('player-3-6')
+    score.innerHTML = playerScore6
+  }
+  
+  if (rows == 4) {
+    let score = document.getElementById('player-3-7')
+    score.innerHTML = playerScore7
+  }
+  
   if (rows == 5) {
     let score = document.getElementById('player-4-0')
     score.innerHTML = playerScore0
@@ -94,6 +144,391 @@ $("#addRowChild").click(function () {
   if (rows == 5) {
     let score = document.getElementById('player-4-2')
     score.innerHTML = playerScore2
+  }
+  
+  if (rows == 5) {
+    let score = document.getElementById('player-4-3')
+    score.innerHTML = playerScore3
+  }
+  
+  if (rows == 5) {
+    let score = document.getElementById('player-4-4')
+    score.innerHTML = playerScore4
+  }
+  
+  if (rows == 5) {
+    let score = document.getElementById('player-4-5')
+    score.innerHTML = playerScore5
+  }
+  
+  if (rows == 5) {
+    let score = document.getElementById('player-4-6')
+    score.innerHTML = playerScore6
+  }
+  
+  if (rows == 5) {
+    let score = document.getElementById('player-4-7')
+    score.innerHTML = playerScore7
+  }
+  
+  if (rows == 6) {
+    let score = document.getElementById('player-5-0')
+    score.innerHTML = playerScore0
+  }
+  
+  if (rows == 6) {
+    let score = document.getElementById('player-5-1')
+    score.innerHTML = playerScore1
+  }
+  
+  if (rows == 6) {
+    let score = document.getElementById('player-5-2')
+    score.innerHTML = playerScore2
+  }
+  
+  if (rows == 6) {
+    let score = document.getElementById('player-5-3')
+    score.innerHTML = playerScore3
+  }
+  
+  if (rows == 6) {
+    let score = document.getElementById('player-5-4')
+    score.innerHTML = playerScore4
+  }
+  
+  if (rows == 6) {
+    let score = document.getElementById('player-5-5')
+    score.innerHTML = playerScore5
+  }
+  
+  if (rows == 6) {
+    let score = document.getElementById('player-5-6')
+    score.innerHTML = playerScore6
+  }
+  
+  if (rows == 6) {
+    let score = document.getElementById('player-5-7')
+    score.innerHTML = playerScore7
+  }
+  
+  if (rows == 7) {
+    let score = document.getElementById('player-6-0')
+    score.innerHTML = playerScore0
+  }
+  
+  if (rows == 7) {
+    let score = document.getElementById('player-6-1')
+    score.innerHTML = playerScore1
+  }
+  
+  if (rows == 7) {
+    let score = document.getElementById('player-6-2')
+    score.innerHTML = playerScore2
+  }
+  
+  if (rows == 7) {
+    let score = document.getElementById('player-6-3')
+    score.innerHTML = playerScore3
+  }
+  
+  if (rows == 7) {
+    let score = document.getElementById('player-6-4')
+    score.innerHTML = playerScore4
+  }
+  
+  if (rows == 7) {
+    let score = document.getElementById('player-6-5')
+    score.innerHTML = playerScore5
+  }
+  
+  if (rows == 7) {
+    let score = document.getElementById('player-6-6')
+    score.innerHTML = playerScore6
+  }
+  
+  if (rows == 7) {
+    let score = document.getElementById('player-6-7')
+    score.innerHTML = playerScore7
+  }
+  
+  if (rows == 8) {
+    let score = document.getElementById('player-7-0')
+    score.innerHTML = playerScore0
+  }
+  
+  if (rows == 8) {
+    let score = document.getElementById('player-7-1')
+    score.innerHTML = playerScore1
+  }
+  
+  if (rows == 8) {
+    let score = document.getElementById('player-7-2')
+    score.innerHTML = playerScore2
+  }
+  
+  if (rows == 8) {
+    let score = document.getElementById('player-7-3')
+    score.innerHTML = playerScore3
+  }
+  
+  if (rows == 8) {
+    let score = document.getElementById('player-7-4')
+    score.innerHTML = playerScore4
+  }
+  
+  if (rows == 8) {
+    let score = document.getElementById('player-7-5')
+    score.innerHTML = playerScore5
+  }
+  
+  if (rows == 8) {
+    let score = document.getElementById('player-7-6')
+    score.innerHTML = playerScore6
+  }
+  
+  if (rows == 8) {
+    let score = document.getElementById('player-7-7')
+    score.innerHTML = playerScore7
+  }
+  
+  if (rows == 9) {
+    let score = document.getElementById('player-8-0')
+    score.innerHTML = playerScore0
+  }
+  
+  if (rows == 9) {
+    let score = document.getElementById('player-8-1')
+    score.innerHTML = playerScore1
+  }
+  
+  if (rows == 9) {
+    let score = document.getElementById('player-8-2')
+    score.innerHTML = playerScore2
+  }
+  
+  if (rows == 9) {
+    let score = document.getElementById('player-8-3')
+    score.innerHTML = playerScore3
+  }
+  
+  if (rows == 9) {
+    let score = document.getElementById('player-8-4')
+    score.innerHTML = playerScore4
+  }
+  
+  if (rows == 9) {
+    let score = document.getElementById('player-8-5')
+    score.innerHTML = playerScore5
+  }
+  
+  if (rows == 9) {
+    let score = document.getElementById('player-8-6')
+    score.innerHTML = playerScore6
+  }
+  
+  if (rows == 9) {
+    let score = document.getElementById('player-8-7')
+    score.innerHTML = playerScore7
+  }
+  
+  if (rows == 10) {
+    let score = document.getElementById('player-9-0')
+    score.innerHTML = playerScore0
+  }
+  
+  if (rows == 10) {
+    let score = document.getElementById('player--1')
+    score.innerHTML = playerScore1
+  }
+  
+  if (rows == 10) {
+    let score = document.getElementById('player-9-2')
+    score.innerHTML = playerScore2
+  }
+  
+  if (rows == 10) {
+    let score = document.getElementById('player-9-3')
+    score.innerHTML = playerScore3
+  }
+  
+  if (rows == 10) {
+    let score = document.getElementById('player-9-4')
+    score.innerHTML = playerScore4
+  }
+  
+  if (rows == 10) {
+    let score = document.getElementById('player-9-5')
+    score.innerHTML = playerScore5
+  }
+  
+  if (rows == 10) {
+    let score = document.getElementById('player-9-6')
+    score.innerHTML = playerScore6
+  }
+  
+  if (rows == 10) {
+    let score = document.getElementById('player-9-7')
+    score.innerHTML = playerScore7
+  }
+  
+  if (rows == 11) {
+    let score = document.getElementById('player-10-0')
+    score.innerHTML = playerScore0
+  }
+  
+  if (rows == 11) {
+    let score = document.getElementById('player-10-1')
+    score.innerHTML = playerScore1
+  }
+  
+  if (rows == 11) {
+    let score = document.getElementById('player-10-2')
+    score.innerHTML = playerScore2
+  }
+  
+  if (rows == 11) {
+    let score = document.getElementById('player-10-3')
+    score.innerHTML = playerScore3
+  }
+  
+  if (rows == 11) {
+    let score = document.getElementById('player-10-4')
+    score.innerHTML = playerScore4
+  }
+  
+  if (rows == 11) {
+    let score = document.getElementById('player-10-5')
+    score.innerHTML = playerScore5
+  }
+  
+  if (rows == 11) {
+    let score = document.getElementById('player-10-6')
+    score.innerHTML = playerScore6
+  }
+  
+  if (rows == 11) {
+    let score = document.getElementById('player-10-7')
+    score.innerHTML = playerScore7
+  }
+  
+  if (rows == 12) {
+    let score = document.getElementById('player-11-0')
+    score.innerHTML = playerScore0
+  }
+  
+  if (rows == 12) {
+    let score = document.getElementById('player-11-1')
+    score.innerHTML = playerScore1
+  }
+  
+  if (rows == 12) {
+    let score = document.getElementById('player-11-2')
+    score.innerHTML = playerScore2
+  }
+  
+  if (rows == 12) {
+    let score = document.getElementById('player-11-3')
+    score.innerHTML = playerScore3
+  }
+  
+  if (rows == 12) {
+    let score = document.getElementById('player-11-4')
+    score.innerHTML = playerScore4
+  }
+  
+  if (rows == 12) {
+    let score = document.getElementById('player-11-5')
+    score.innerHTML = playerScore5
+  }
+  
+  if (rows == 12) {
+    let score = document.getElementById('player-11-6')
+    score.innerHTML = playerScore6
+  }
+  
+  if (rows == 12) {
+    let score = document.getElementById('player-11-7')
+    score.innerHTML = playerScore7
+  }
+  
+  if (rows == 13) {
+    let score = document.getElementById('player-12-0')
+    score.innerHTML = playerScore0
+  }
+  
+  if (rows == 13) {
+    let score = document.getElementById('player-12-1')
+    score.innerHTML = playerScore1
+  }
+  
+  if (rows == 13) {
+    let score = document.getElementById('player-12-2')
+    score.innerHTML = playerScore2
+  }
+  
+  if (rows == 13) {
+    let score = document.getElementById('player-12-3')
+    score.innerHTML = playerScore3
+  }
+  
+  if (rows == 13) {
+    let score = document.getElementById('player-12-4')
+    score.innerHTML = playerScore4
+  }
+  
+  if (rows == 13) {
+    let score = document.getElementById('player-12-5')
+    score.innerHTML = playerScore5
+  }
+  
+  if (rows == 13) {
+    let score = document.getElementById('player-12-6')
+    score.innerHTML = playerScore6
+  }
+  
+  if (rows == 13) {
+    let score = document.getElementById('player-12-7')
+    score.innerHTML = playerScore7
+  }
+  
+  if (rows == 14) {
+    let score = document.getElementById('player-13-0')
+    score.innerHTML = playerScore0
+  }
+  
+  if (rows == 14) {
+    let score = document.getElementById('player-13-1')
+    score.innerHTML = playerScore1
+  }
+  
+  if (rows == 14) {
+    let score = document.getElementById('player-13-2')
+    score.innerHTML = playerScore2
+  }
+  
+  if (rows == 14) {
+    let score = document.getElementById('player-13-3')
+    score.innerHTML = playerScore3
+  }
+  
+  if (rows == 14) {
+    let score = document.getElementById('player-13-4')
+    score.innerHTML = playerScore4
+  }
+  
+  if (rows == 14) {
+    let score = document.getElementById('player-13-5')
+    score.innerHTML = playerScore5
+  }
+  
+  if (rows == 14) {
+    let score = document.getElementById('player-13-6')
+    score.innerHTML = playerScore6
+  }
+  
+  if (rows == 14) {
+    let score = document.getElementById('player-13-7')
+    score.innerHTML = playerScore7
   }
                         
 });
