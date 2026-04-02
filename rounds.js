@@ -4,14 +4,16 @@ let table = document.getElementById("gameTable");
 
 //add column
 $("#addColumnChild").click(function () {
-  if(columns >= 7) 
+  if(columns >= 6) 
     return
   
+  //Row for the Player Names
   let nameRow = document.getElementById("nameRow");
   let nameCell = document.createElement("th");
   nameCell.innerHTML = "<input placeholder='Name' class='name' >";
   nameRow.appendChild(nameCell);
 
+  //Row for each players total score
   let ovrScoreRow = document.getElementById("ovrScoreRow");
   let ovrScoreCell = document.createElement("th");
   ovrScoreCell.innerHTML = `<div class='ovrScore' id='player-ovr-score-${columns}'>0</div>`;
@@ -19,20 +21,23 @@ $("#addColumnChild").click(function () {
 
   let rowElements = document.getElementsByClassName("score-row");
 
+  //Add as many rows as needed for the amount of rounds that have been played
   for (let i = 0; i < rowElements.length; i++) {
     let cell = document.createElement("td");
-    cell.innerHTML = `<input class='score player-${columns}' onchange='calcScore()' type="number" value=0>`;
+    cell.innerHTML = `<div class='score player-${rows}-${i}'></div>`;
     rowElements[i].appendChild(cell);
   }
   columns += 1;
 });
 
-//add row
+//Add a row
 $("#addRowChild").click(function () {
+  //Add new row to the table
   let row = document.createElement("tr");
+  //Set classes and id for scoring
   row.classList.add("score-row");
   row.setAttribute("id", "score-row-"+rows)
-
+  //Add cells in the new row for each new player
   for (let i = 0; i < columns; i++) {
     let cell = document.createElement("td");
     cell.innerHTML = `<input class='score player-${i}' onchange='calcScore()' type="number" value=0>`;
@@ -69,7 +74,7 @@ $("#deleteColumnChild").click(function () {
   columns -= 1;
 });
 
-
+//When a round's score is changed, update all the scores
 function calcScore(){
   for(let i = 0; i < columns; i++){
     let playerScores = document.getElementsByClassName(`player-${i}`)
